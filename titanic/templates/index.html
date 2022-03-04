@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>Titanic predictor</title>
 </head>
 <body>
     <h1>Home Page!</h1>
+    <button type="button" onclick="clicked()">Button</button>
     <h3>Get your titanic predictions here!</h3>
     <p>Enter in details of a made  up person on the titanic voyage</p>
     <p>We will output a prediction</p>
@@ -31,5 +34,6 @@
         <input type="text" name="title">
         <input type="submit">
     </form>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
 </body>
 </html>
